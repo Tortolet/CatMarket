@@ -42,7 +42,7 @@
 <!--</div>-->
 <div class="container mt-3" >
   <h1>Магазин котов и кошек</h1>
-  <button type="button" class="btn btn-primary" id="add_pos" data-bs-toggle="modal" data-bs-target="#createModal">Добавить</button>
+  <button type="button" class="btn btn-primary" id="add_pos" data-bs-toggle="modal" data-bs-target="#createModal" sec:authorize="hasRole('ROLE_ADMIN')">Добавить</button>
   <div id="cat_info">
   </div>
 </div>
